@@ -1,0 +1,9 @@
+person(male_aged)  :- is_true("has male"), is_true("Age above 60"),is_true("ten contact").
+person(female_aged)  :- is_true("has female"), is_true("Age above 60"),is_true("three contact").
+person(male_young) :- is_true("has male"), is_true("Age above 18"),is_true("twenty  contact").
+person(female_young):-is_true("has female"), is_true("Age above 18"),is_true("twenty  contact").
+person(male_kid):-is_true("has male"), is_true("Age below 18"),is_true("zero  contact").
+person(female_kid):-is_true("has femalemale"), is_true("Age below 18"),is_true("zero  contact").
+is_true(Q) :-
+        format("~s?\n", [Q]),
+        read(yes).

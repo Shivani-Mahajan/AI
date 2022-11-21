@@ -1,0 +1,9 @@
+fault(visz,keyboard_damage).
+fault(visz,monitor_damage).
+fault(visz,windows_not_working).
+fault(visz,virus_damage).
+
+hypothesis(User,hp_fault):-fault(User,keyboard_damage),fault(User,monitor_damage),
+                           fault(User,fan_damage),fault(User,bios).
+hypothesis(User,dell_fault):-fault(User,keyboard_damage),fault(User,monitor_damage),
+                            fault(User,windows_not_working),fault(User,virus_damage).

@@ -1,0 +1,21 @@
+suggest(S):-
+write("What type of book are you intrested"),
+read(T),
+write("Which language would you preferr"),
+read(L),
+write("What is your age"),
+read(A),
+book(S,T,L,A).
+
+
+book('chava',T,L,A):-
+T=motivation,
+L=marathi,
+A>=18,
+!.
+
+book('book 001',T,L,A):-
+(T=(motivation);T=(history)),
+L=marathi,
+A>=18,
+!.

@@ -1,0 +1,45 @@
+Q9
+
+happy(yolanda).
+listens2music(mia).
+listens2music(yolanda):-happy(yolanda).
+playsairguitar(mia):-listens2music(mia).
+playsairguitar(yolanda):-listens2music(yolanda)
+
+
+query :
+
+1.  playsairgiutar(X)
+2.  playsairguitar(mia)
+
+
+
+Q10
+
+happy(yolanda).
+listens2music(mia).
+listens2music(yolanda):-happy(yolanda).
+playsairguitar(mia):-listens2music(mia).
+playsairguitar(yolanda):-listens2music(yolanda)
+
+query:
+
+1.  playsairgiutar(X)
+2.  playsairguitar(yolanda)
+3.  5 clauses
+
+
+Q11
+
+1. 8 clauses
+2. 8 predicates
+3. 4 facts 4 rules
+
+
+Q12
+
+1. 8 clauses
+2. 8 predicates
+3. 4 facts 4 rules
+
+
